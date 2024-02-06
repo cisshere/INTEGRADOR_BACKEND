@@ -5,7 +5,7 @@ dotenv.config();
 
 export const contectarBaseDatos = async (): Promise<void> => {
   try {
-    const bsConnection = process.env.BD_CONNECTION;
+    const bsConnection = "mongodb+srv://integrador:integrador6245*@cluster0.4fpzyrc.mongodb.net/?retryWrites=true&w=majority";
 
     if (!bsConnection) {
       throw new Error("La variable BD_CONNECTION no esta definida en .env");
